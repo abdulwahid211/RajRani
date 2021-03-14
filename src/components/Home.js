@@ -1,30 +1,45 @@
 import React, { Component } from 'react'
-import styled, { keyframes } from 'styled-components'
 import background1 from '../../public/img/hm1.jpg';
 import background2 from '../../public/img/hm2.jpg';
+import elephant from '../../public/img/elephant.png';
+import ReactFontFace from 'react-font-face'
+import MonotypeFont from '../../public/fonts/mtcorsva.ttf';
+
+
+const styles = {
+    main: {
+      fontFamily: 'Monotype Corsiva',
+    }
+  };
+
+
+  let fontConfig = {
+    file: [
+      {
+        fontFamily: 'Monotype Corsiva',
+        file: MonotypeFont,
+        fontType: 'truetype',
+        fileLocal: 'Monotype Corsiva'
+      },
+      
+    ]
+  }
+
 class Home extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
             count: 0,
-            currentBackground: background1,
-            fadeIn: keyframes`0% {opacity: 0;} 90% {opacity: 1;}`
+            currentBackground: background1
         }
     }
-
 
     componentDidMount() {
         this.SwitchBackgroundTimer();
         console.log("Hello Bitch ")
 
     }
-
-    componentDidUpdate(prevProps, prevState) {
-        console.log("Updated " + prevState.count)
-    }
-
-
 
     SwitchBackgroundTimer() {
 
@@ -45,35 +60,24 @@ class Home extends Component {
                     this.setState({ currentBackground: background1 })
                     break;
                 }
-
             }
         }, 5000)
     }
 
-    componentWillUnmount() {
-        // we set the timeout to this.turnOffRedTimeout so that we can
-        // clean it up when the component is unmounted.
-        // otherwise you could get your app trying to modify the state on an
-        // unmounted component, which will throw an error
-        // clearTimeout(this.makeTimer)
-        clearTimeout(this.makeTimer())
-        console.log("Removed Bitch ")
-    }
-
     render() {
-// https://stackoverflow.com/questions/52507110/implementing-transition-effects-in-react-js-when-state-changes
-        const FadeInBackground = styled.div`animation: ${this.state.fadeIn} 5s;`;
-        
         return (
-            <FadeInBackground>
-                <div className="home-container" style={{ backgroundImage: `url(${this.state.currentBackground})` }}>
-                    <h1>Raj Rani</h1>
+            <div className="home-container">
+                <div id="background-image" style={{ backgroundImage: `url(${this.state.currentBackground})` }}>
+                    <div className="main-title">
+                        <img src={elephant} width="200" height="221" id="elephant"></img>
+                        <h1 style={styles.main}>Raj Rani</h1>
+                        <h2 style={styles.main}>Takeaway</h2>
+                    </div>
                 </div>
-            </FadeInBackground>
-
+            </div>
         );
     }
 }
 
 
-export default Home;
+export default  ReactFontFace(Home, fontConfig);;
