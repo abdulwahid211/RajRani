@@ -1,8 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-// import './styles/styles.scss';
-// import Layout from './components/Layout';
+import './styles/styles.scss';
+import Layout from './components/Layout';
 
-
-
-ReactDOM.render(<h1>Hello RajRani bro</h1>, document.getElementById('app'));
+ReactDOM.render(<Layout/>,document.getElementById('app'));

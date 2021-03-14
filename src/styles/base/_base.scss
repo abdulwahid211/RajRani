@@ -1,0 +1,31 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  html,
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: $m-size;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
