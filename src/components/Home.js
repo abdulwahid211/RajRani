@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import background1 from '../../public/img/hm1.jpg';
 import background2 from '../../public/img/hm2.jpg';
-import elephant from '../../public/img/elephant.png';
+import elephant from '../../public/img/rajrani_main_logo.png';
 import arrow from '../../public/img/arrow.png';
 import ReactFontFace from 'react-font-face'
 import MonotypeFont from '../../public/fonts/mtcorsva.ttf';
