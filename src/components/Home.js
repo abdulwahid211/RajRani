@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import background1 from '../../public/img/hm1.jpg';
 import background2 from '../../public/img/hm2.jpg';
 import elephant from '../../public/img/elephant.png';
+import arrow from '../../public/img/arrow.png';
 import ReactFontFace from 'react-font-face'
 import MonotypeFont from '../../public/fonts/mtcorsva.ttf';
 
@@ -68,10 +69,12 @@ class Home extends Component {
         return (
             <div className="home-container">
                 <div id="background-image" style={{ backgroundImage: `url(${this.state.currentBackground})` }}>
-                    <div className="main-title">
-                        <img src={elephant} width="200" height="221" id="elephant"></img>
-                        <h1 style={styles.main}>Raj Rani</h1>
-                        <h2 style={styles.main}>Takeaway</h2>
+                    <div className="main-content">
+                        <img src={elephant} width="200" height="221" id="big-elephant"></img>
+                        <h1 style={styles.main} id="main-title">Raj Rani</h1>
+                        <h2 style={styles.main} id="sub-title">Takeaway</h2>
+                        <button> ORDER ONLINE</button>
+                        <img src={arrow} width="219" height="154" id="arrow"></img>
                     </div>
                 </div>
             </div>
