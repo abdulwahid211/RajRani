@@ -5,19 +5,19 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <nav className="Nav">
+            <nav id="nav">
                 <ul>
                     <li>
-                        Home
+                        Home  
                     </li>
                     <li>
-                        About
+                    &nbsp;|&nbsp; About  
                     </li>
                     <li>
-                        Gallery
+                    &nbsp;| &nbsp;Gallery   
                     </li>
                     <li>
-                        Contact
+                    &nbsp;| &nbsp;Contact  
                     </li>
 
                 </ul>

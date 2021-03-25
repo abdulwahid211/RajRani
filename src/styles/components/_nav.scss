@@ -1,5 +1,22 @@
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  text-align:center;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+  color: white;
+  padding-right: 30px;
+  background-color:  rgba(156, 134, 87, 0.45);
+ 
+
+}

@@ -8,7 +8,7 @@ import MonotypeFont from '../../public/fonts/mtcorsva.ttf';
 
 
 const styles = {
-    main: {
+    Monotype: {
       fontFamily: 'Monotype Corsiva',
     }
   };
@@ -43,9 +43,7 @@ class Home extends Component {
     }
 
     SwitchBackgroundTimer() {
-
         setInterval(() => {
-
             switch (this.state.count) {
                 case 0: {
                     this.setState({ currentBackground: background2 })
@@ -71,8 +69,8 @@ class Home extends Component {
                 <div id="background-image" style={{ backgroundImage: `url(${this.state.currentBackground})` }}>
                     <div className="main-content">
                         <img src={elephant} width="200" height="221" id="big-elephant"></img>
-                        <h1 style={styles.main} id="main-title">Raj Rani</h1>
-                        <h2 style={styles.main} id="sub-title">Takeaway</h2>
+                        <h1 style={styles.Monotype} id="main-title">Raj Rani</h1>
+                        <h2 style={styles.Monotype} id="sub-title">Takeaway</h2>
                         <button> ORDER ONLINE</button>
                         <img src={arrow} width="219" height="154" id="arrow"></img>
                     </div>

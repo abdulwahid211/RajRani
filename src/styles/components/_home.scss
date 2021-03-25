@@ -3,11 +3,11 @@
   height: 100%;
   padding: 0;
   z-index: -1;
-  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 4s; /* Firefox < 16 */
-  -ms-animation: fadein 4s; /* Internet Explorer */
-  -o-animation: fadein 4s; /* Opera < 12.1 */
-  animation: fadein 4s;
+  // -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  // -moz-animation: fadein 4s; /* Firefox < 16 */
+  // -ms-animation: fadein 4s; /* Internet Explorer */
+  // -o-animation: fadein 4s; /* Opera < 12.1 */
+  // animation: fadein 4s;
 }
 
 #background-image {
@@ -31,6 +31,7 @@ h1,
 h2 {
   text-rendering: auto;
   color: white;
+  font-weight: 10;
 }
 
 .main-content {
@@ -85,12 +86,8 @@ h2 {
   animation-timing-function: linear;
 }
 
-.bounce-1 {
-
-}
-
 @keyframes bounce-1 {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-25px); }
+  50%  { transform: translateY(-35px); }
   100% { transform: translateY(0); }
 }
