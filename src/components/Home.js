@@ -81,4 +81,4 @@ class Home extends Component {
 }
 
 
-export default  ReactFontFace(Home, fontConfig);;
+export default  ReactFontFace(Home, fontConfig);

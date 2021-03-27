@@ -3,20 +3,27 @@ ul {
   justify-content: flex-end;
   flex-direction: row;
   list-style-type: none;
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 10px;
 }
 
-nav{
+nav {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: auto;
-  text-align:center;
+  text-align: center;
   left: 0;
   right: 0;
   font-size: 1.5rem;
   color: white;
+  background-color: rgba(156, 134, 87, 0.45);
   padding-right: 30px;
-  background-color:  rgba(156, 134, 87, 0.45);
- 
+  padding-left: 30px;
+}
 
+h1 {
+  float: left;
+  font-size: 2.8rem;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

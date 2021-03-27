@@ -1,11 +1,33 @@
 import React, { Component } from 'react'
+import MonotypeFont from '../../public/fonts/mtcorsva.ttf';
+import ReactFontFace from 'react-font-face'
 
 
-export default class NavBar extends Component {
+const styles = {
+    Monotype: {
+      fontFamily: 'Monotype Corsiva',
+    }
+  };
+
+  let fontConfig = {
+    file: [
+      {
+        fontFamily: 'Monotype Corsiva',
+        file: MonotypeFont,
+        fontType: 'truetype',
+        fileLocal: 'Monotype Corsiva'
+      },
+      
+    ]
+  }
+
+
+class NavBar extends Component {
 
     render() {
         return (
             <nav id="nav">
+             <h1 style={styles.Monotype}>Raj Rani</h1>
                 <ul>
                     <li>
                         Home  
@@ -24,6 +46,7 @@ export default class NavBar extends Component {
             </nav>
         )
     }
-
-
 }
+
+
+export default  ReactFontFace(NavBar, fontConfig);;
