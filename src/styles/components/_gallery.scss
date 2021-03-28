@@ -1,0 +1,24 @@
+#gallery-content{
+    width: 100%;
+    height: 100%;
+}
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 90px;
+}
+
+#gallery .items{ 
+    margin: 25px;
+    border-radius: 10px;
+ 
+    border: 4px solid $theme;
+    transition: all .9s ease-in-out; 
+}
+
+#gallery .items:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    border: 8px solid $theme;
+}

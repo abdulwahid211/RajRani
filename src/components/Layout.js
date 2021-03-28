@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Home from './Home'
 import About from './About'
 import NavBar from './NavBar';
+import Gallery from './Gallery';
+import Contact from './Contact';
 
 class Layout extends Component {
     render() {
@@ -10,6 +12,8 @@ class Layout extends Component {
                 <NavBar /> 
                 <Home />
                 <About />
+                <Gallery/>
+                <Contact/>
             </div>
         );
     }
