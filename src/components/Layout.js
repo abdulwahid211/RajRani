@@ -12,7 +12,7 @@ class Layout extends Component {
                 <NavBar /> 
                 <Home />
                 <About />
-                {/* <Gallery/> */}
+                <Gallery/>
                 <Contact/>
             </div>
         );

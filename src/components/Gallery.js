@@ -8,7 +8,7 @@ class Gallery extends Component {
     super(props)
     const photos = []
 
-    for (var i = 1; i <= 9; i++) {
+    for (var i = 1; i <= 8; i++) {
       var source = `../../img/foods/food${i}.png`;
       photos.push(source);
     }
@@ -28,9 +28,7 @@ class Gallery extends Component {
 
     return (
       <div id="gallery-content">
-        <h1>Gallery Page</h1>
         <div id="gallery">
-
           {images.map((photo, index) => (
             <div className="items" key={index}>
             <img src={photo} width="450" height="300" onClick={() => this.setState({ isOpen: true, photoIndex: index })} ></img>

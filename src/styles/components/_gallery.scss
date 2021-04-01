@@ -1,24 +1,30 @@
 #gallery-content{
+    background-color: bisque;
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 
 #gallery{
     display: flex;
     flex-wrap: wrap;
     padding-top: 90px;
+    justify-content: center;
+}
+
+.items img{
+    height: auto;
+    max-width: 100%;
+    border: 4px solid $theme;
+    margin: 5px;
+    border-radius: 10px;
 }
 
 #gallery .items{ 
-    margin: 25px;
-    border-radius: 10px;
- 
-    border: 4px solid $theme;
     transition: all .9s ease-in-out; 
+   
 }
 
 #gallery .items:hover{
     transform: scale(1.1);
     border-radius: 10px;
-    border: 8px solid $theme;
 }
