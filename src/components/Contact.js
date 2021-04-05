@@ -34,7 +34,7 @@ class Contact extends Component {
   render() {
 
     return (
-      <div className="contact" >
+      <div id="contact" >
         <MapContainer center={[51.505, -0.09]} zoom={20} scrollWheelZoom={false}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

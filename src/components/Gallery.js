@@ -27,15 +27,12 @@ class Gallery extends Component {
     const { photoIndex, isOpen, images } = this.state;
 
     return (
-      <div id="gallery-content">
         <div id="gallery">
           {images.map((photo, index) => (
             <div className="items" key={index}>
             <img src={photo} width="450" height="300" onClick={() => this.setState({ isOpen: true, photoIndex: index })} ></img>
             </div>
           ))}
-
-        </div>
 
         {isOpen && (
           <Lightbox

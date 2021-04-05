@@ -1,4 +1,4 @@
-.home-container {
+#home{
   width: 100%;
   height: 100%;
   padding: 0;
@@ -73,6 +73,13 @@ h2 {
   padding-bottom: 13px;
   border-color: white;
   background-color: white;
+}
+
+.main-content button:hover {
+  font-weight: bold;
+  color: $theme;
+  border-color: $theme;
+  background-color: bisque;
 }
 
 .main-content #arrow {

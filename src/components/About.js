@@ -26,7 +26,7 @@ class About extends Component {
   render() {
 
     return (
-      <div id="about-content">
+      <div id="about">
 
         <img src={elephant} width="500" height="513" id="about-elephant"></img>
         <div id="about-text">

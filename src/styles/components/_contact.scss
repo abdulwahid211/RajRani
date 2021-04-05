@@ -1,11 +1,11 @@
-.contact {
+#contact {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
     width: 100%;
     height: 80%;
-    background-color: #593117;
+    background-color: $footer;
 }
 
 .leaflet-container {

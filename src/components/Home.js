@@ -5,26 +5,26 @@ import elephant from '../../public/img/rajrani_main_logo.png';
 import arrow from '../../public/img/arrow.png';
 import ReactFontFace from 'react-font-face'
 import MonotypeFont from '../../public/fonts/mtcorsva.ttf';
-
+import { Link } from "react-scroll";
 
 const styles = {
     Monotype: {
-      fontFamily: 'Monotype Corsiva',
-    }
-  };
-
-
-  let fontConfig = {
-    file: [
-      {
         fontFamily: 'Monotype Corsiva',
-        file: MonotypeFont,
-        fontType: 'truetype',
-        fileLocal: 'Monotype Corsiva'
-      },
-      
+    }
+};
+
+
+let fontConfig = {
+    file: [
+        {
+            fontFamily: 'Monotype Corsiva',
+            file: MonotypeFont,
+            fontType: 'truetype',
+            fileLocal: 'Monotype Corsiva'
+        },
+
     ]
-  }
+}
 
 class Home extends Component {
 
@@ -35,6 +35,7 @@ class Home extends Component {
             currentBackground: background1
         }
     }
+
 
     componentDidMount() {
         this.SwitchBackgroundTimer();
@@ -65,14 +66,22 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="home-container">
+            <div id="home">
                 <div id="background-image" style={{ backgroundImage: `url(${this.state.currentBackground})` }}>
                     <div className="main-content">
                         <img src={elephant} width="200" height="221" id="big-elephant"></img>
                         <h1 style={styles.Monotype} id="main-title">Raj Rani</h1>
                         <h2 style={styles.Monotype} id="sub-title">Takeaway</h2>
                         <button> ORDER ONLINE</button>
-                        <img src={arrow} width="219" height="154" id="arrow"></img>
+                        <Link
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={-68}
+                            duration={500}
+                        >
+                            <img src={arrow} width="219" height="154" id="arrow"></img>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -81,4 +90,4 @@ class Home extends Component {
 }
 
 
-export default  ReactFontFace(Home, fontConfig);
+export default ReactFontFace(Home, fontConfig);

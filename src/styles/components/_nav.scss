@@ -9,7 +9,6 @@ ul {
 }
 
 nav {
-  position: absolute;
   text-align: center;
   left: 0;
   right: 0;
@@ -18,6 +17,7 @@ nav {
   background-color: rgba(156, 134, 87, 0.45);
   padding-right: 30px;
   padding-left: 30px;
+  z-index: 1;
 }
 
 h1 {
