@@ -39,6 +39,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   flex-wrap: wrap;
   min-height: 55em; // minimum height for the main content
 }
@@ -84,9 +85,10 @@ h2 {
 
 .main-content #arrow {
   position: absolute;
-  bottom: 0px;
   height: auto;
-  width: 6%;
+  top:105%;
+  left: 48%;
+  width: 5%;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: bounce-1;
