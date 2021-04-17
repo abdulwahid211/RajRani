@@ -1,0 +1,21 @@
+//Media queries 1024px - desktop size
+@media only screen and (max-width: 600px) {
+    #about {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        justify-content: center;
+        align-content: center;
+        margin-left: 10px;
+        
+        width: 100%;
+        height: 90%;
+
+    }
+
+    #about-elephant {
+        width: auto;
+        height: 60%;
+    }
+}

@@ -21,13 +21,11 @@ let fontConfig = {
   ]
 }
 
-
 class NavBar extends Component {
 
   state = {
     style: { position: 'absolute' },
   }
-
 
   showFixedNavBar = () => {
     this.setState({ style: { position: 'fixed', transitionTimingFunction: 'ease-out', transition: '0.8s', backgroundColor: 'rgba(156, 134, 87, 1)' } })
@@ -94,7 +92,6 @@ class NavBar extends Component {
               &nbsp;| &nbsp;Contact
             </Link>
           </li>
-
         </ul>
       </nav>
     )
