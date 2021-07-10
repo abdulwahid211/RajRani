@@ -1,0 +1,31 @@
+
+
+.items img{
+    height: auto;
+    max-width: 90%;
+    border: 4px solid $theme;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    #gallery{
+        display: flex;
+        flex-wrap:wrap;
+        margin-bottom: 60px;
+        background-color: bisque;
+        height: 60%;
+        width: 100%;
+        padding: 0px;
+        justify-content: space-around;
+    }
+
+
+    .items {
+        width: 20%;
+        padding: 0;
+        margin: 5px;
+    }
+
+}
