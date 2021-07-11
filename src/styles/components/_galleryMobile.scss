@@ -29,3 +29,24 @@
     }
 
 }
+
+@media only screen and (max-width: 900px) {
+    #gallery{
+        display: flex;
+        flex-wrap:wrap;
+        margin-bottom: 60px;
+        background-color: bisque;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        justify-content: space-around;
+    }
+
+
+    .items {
+        width: 50%;
+        padding: 0;
+        margin: 0px;
+    }
+
+}

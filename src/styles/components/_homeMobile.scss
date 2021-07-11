@@ -33,7 +33,7 @@
 
 }
 
-//Media queries 800px - iphone landscape
+//Media queries 100px - iphone landscape
 @media only screen and (max-width: 1000px) {
 
     .main-content {
@@ -78,8 +78,8 @@
       }
 }
 
-//Media queries 800px - iphone landscape
-@media only screen and (max-width: 500px) {
+//Media queries 500px - iphone landscape
+@media only screen and (max-width: 600px) {
 
     #big-elephant {
         width: 45%;

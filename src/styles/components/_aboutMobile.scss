@@ -14,6 +14,7 @@
         height:80%;
         padding-top: 30px;
         padding-left: 130px;
+        visibility: none;
     }
 
     #about-text p {
@@ -64,4 +65,13 @@
     }
 }
 
+
+@media only screen and (max-width: 400px) {
+    #about-text p {
+        text-align: center;
+        font-size: 1.2rem;
+        width: 300px;
+        padding-bottom: 350px;
+    }
+}
 
