@@ -1,6 +1,7 @@
 'use client';
 import React, { Component } from 'react';
 import Home from './Home';
+import About from './About';
 // import About from './About'
 // import NavBar from './NavBar';
 // import Gallery from './Gallery';
@@ -12,7 +13,8 @@ class PageLayout extends Component {
       <div>
         {/* <NavBar />  */}
         <Home />
-        {/* <About />
+        <About />
+        {/*
                 <Gallery/>
                 <Contact/> */}
       </div>

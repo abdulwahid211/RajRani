@@ -1,118 +1,121 @@
 //Media queries 1024px - desktop size
 @media only screen and (max-width: 600px) {
-    .main-content {
-        position: absolute;
-        margin: auto;
-        top: 0px; left: 0; bottom: -60px; right: 0;
-    }
+  .main-content {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0;
+    bottom: -60px;
+    right: 0;
+  }
 
-    #big-elephant {
-        width: 40%;
-        height: auto;
-    }
-    #main-title {
-        font-size: 5em;
-        padding: 0px;
-        margin: 0px;
-    }
+  #big-elephant {
+    width: 40%;
+    height: auto;
+  }
+  #main-title {
+    font-size: 5em;
+    padding: 0px;
+    margin: 0px;
+  }
 
-    #sub-title {
-        font-size: 3em;
-        padding: 0px;
-        padding-bottom: 10px;
-        margin: 0px;
-    }
-    .main-content #arrow {
-        position: relative;
-        padding-left:110px;
-        top: 60px;
-        left: 0;
-        right: 0;
-        width: 30%;
-      }
-
+  #sub-title {
+    font-size: 3em;
+    padding: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
+  }
+  .main-content #arrow {
+    position: relative;
+    padding-left: 110px;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 30%;
+  }
 }
 
 //Media queries 100px - iphone landscape
 @media only screen and (max-width: 1000px) {
+  .main-content {
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0;
+    bottom: -60px;
+    right: 0;
+  }
 
-    .main-content {
-        position: absolute;
-        margin: auto;
-        top: 0px; left: 0; bottom: -60px; right: 0;
-    }
+  #big-elephant {
+    width: 16%;
+    height: auto;
+  }
 
-    #big-elephant {
-        width: 16%;
-        height: auto;
-    }
+  #main-title {
+    font-size: 3em;
+    padding: 0px;
+    margin: 0px;
+  }
 
-    #main-title {
-        font-size: 3em;
-        padding: 0px;
-        margin: 0px;
-    }
+  #sub-title {
+    font-size: 2em;
+    padding: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
+  }
+  #background-image {
+    background-repeat: no-repeat;
+    background-size: 200% 160%;
+    transition: all 0.9s ease-in-out;
+  }
 
-    #sub-title {
-        font-size: 2em;
-        padding: 0px;
-        padding-bottom: 10px;
-        margin: 0px;
-    }
-    #background-image {
-        background-repeat: no-repeat;
-        background-size: 200% 160%;
-        transition: all 0.9s ease-in-out;
-      }
-
-      .main-content button {
-        display: inline-block;
-        border-radius: 5%;
-        font-size: 10px;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-color: white;
-        background-color: white;
-      }
+  .main-content button {
+    display: inline-block;
+    border-radius: 5%;
+    font-size: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: white;
+    background-color: white;
+  }
 }
 
 //Media queries 500px - iphone landscape
 @media only screen and (max-width: 600px) {
+  #big-elephant {
+    width: 45%;
+    height: auto;
+  }
 
-    #big-elephant {
-        width: 45%;
-        height: auto;
-    }
+  #main-title {
+    font-size: 4em;
+    padding: 0px;
+    margin: 0px;
+  }
 
-    #main-title {
-        font-size: 4em;
-        padding: 0px;
-        margin: 0px;
-    }
+  #sub-title {
+    font-size: 2em;
+    padding: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
+  }
+  #background-image {
+    background-repeat: no-repeat;
+    background-size: 250% 150%;
+    transition: all 0.9s ease-in-out;
+  }
 
-    #sub-title {
-        font-size: 2em;
-        padding: 0px;
-        padding-bottom: 10px;
-        margin: 0px;
-    }
-    #background-image {
-        background-repeat: no-repeat;
-        background-size: 250% 150%;
-        transition: all 0.9s ease-in-out;
-      }
-
-      .main-content button {
-        display: inline-block;
-        border-radius: 5%;
-        font-size: 10px;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-color: white;
-        background-color: white;
-      }
+  .main-content button {
+    display: inline-block;
+    border-radius: 5%;
+    font-size: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: white;
+    background-color: white;
+  }
 }
