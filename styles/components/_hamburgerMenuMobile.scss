@@ -1,0 +1,11 @@
+@media only screen and (max-width: 900px) {
+  #hamburger-menu {
+    display: block;
+    position: fixed;
+  }
+}
+@media only screen and (min-width: 950px) {
+  #hamburger-menu {
+    display: none; /* Hide hamburger on larger screens */
+  }
+}

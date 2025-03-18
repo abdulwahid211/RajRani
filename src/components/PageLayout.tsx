@@ -7,12 +7,14 @@ import { Gallery } from './Gallery';
 import Contact from './Contact';
 import '../../styles/styles.scss';
 import NavBar from './NavBar';
+import HamburgerMenu from './HamburgerMenu';
 
 class PageLayout extends Component {
   render() {
     return (
       <div>
         <NavBar />
+        <HamburgerMenu />
         <Home />
         <About />
         <Gallery />
