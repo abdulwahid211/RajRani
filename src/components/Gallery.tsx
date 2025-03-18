@@ -23,22 +23,24 @@ export const Gallery = () => {
   }, []);
 
   return (
-    <div className="gallery-container">
-      {photos.map((photo, index) => (
-        <div className="items" key={index}>
-          <img
-            src={photo.src}
-            width="450"
-            height="300"
-            onClick={() => {
-              setPhotoIndex(index);
-              setOpen(true);
-            }}
-          ></img>
-        </div>
-      ))}
+    <div id="gallery">
+      <div className="gallery-container">
+        {photos.map((photo, index) => (
+          <div className="items" key={index}>
+            <img
+              src={photo.src}
+              width="450"
+              height="300"
+              onClick={() => {
+                setPhotoIndex(index);
+                setOpen(true);
+              }}
+            ></img>
+          </div>
+        ))}
 
-      <Lightbox open={open} close={() => setOpen(false)} index={photoIndex} slides={photos} />
+        <Lightbox open={open} close={() => setOpen(false)} index={photoIndex} slides={photos} />
+      </div>
     </div>
   );
 };

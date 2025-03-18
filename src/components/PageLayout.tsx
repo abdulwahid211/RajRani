@@ -6,16 +6,13 @@ import About from './About';
 import { Gallery } from './Gallery';
 import Contact from './Contact';
 import '../../styles/styles.scss';
-// import About from './About'
-// import NavBar from './NavBar';
-// import Gallery from './Gallery';
-// import Contact from './Contact';
+import NavBar from './NavBar';
 
 class PageLayout extends Component {
   render() {
     return (
       <div>
-        {/* <NavBar />  */}
+        <NavBar />
         <Home />
         <About />
         <Gallery />

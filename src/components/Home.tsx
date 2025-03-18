@@ -22,20 +22,22 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="home-container">
-      <div id="home-content">
-        <div id="home-background-container">
-          <img src={currentBackground.src} id="home-background"></img>
-        </div>
+    <div id="home">
+      <div className="home-container">
+        <div id="home-content">
+          <div id="home-background-container">
+            <img src={currentBackground.src} id="home-background"></img>
+          </div>
 
-        <div id="home-info">
-          <img src={elephant.src} width="200" height="221" id="big-elephant"></img>
-          <h1 id="main-title">Raj Rani</h1>
-          <h2 id="sub-title">Takeaway</h2>
-          <button> ORDER ONLINE</button>
-          <Link to="about" spy={true} smooth={true} offset={-68} duration={500}>
-            <img src={arrow.src} width="60" height="60" id="arrow"></img>
-          </Link>
+          <div id="home-info">
+            <img src={elephant.src} width="200" height="221" id="big-elephant"></img>
+            <h1 id="main-title">Raj Rani</h1>
+            <h2 id="sub-title">Takeaway</h2>
+            <button> ORDER ONLINE</button>
+            <Link to="about" spy={true} smooth={true} offset={-68} duration={500}>
+              <img src={arrow.src} width="60" height="60" id="arrow"></img>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
