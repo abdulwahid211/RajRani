@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Hamburger from 'hamburger-react';
-import SlidingPanel from 'react-sliding-side-panel';
-import 'react-sliding-side-panel/lib/index.css';
+import SlidingPane from 'react-sliding-pane';
+import 'react-sliding-pane/dist/react-sliding-pane.css';
 import '../../styles/styles.scss';
 
 export default function HamburgerMenu() {
-  const [isOpen, setOpen] = useState(false);
-  const [openPanel, setOpenPanel] = useState(false);
+  const [isOpen, setOpen] = useState<boolean>(false);
+  const [openPanel, setOpenPanel] = useState<boolean>(false);
 
   return (
     <div id="hamburger-menu">
@@ -14,23 +14,26 @@ export default function HamburgerMenu() {
         <Hamburger
           rounded
           toggled={isOpen}
-          toggle={() => {
-            setOpen(!isOpen);
-            setOpenPanel(!openPanel);
+          onToggle={(toggled) => {
+            if (toggled) {
+              setOpen(true);
+              setOpenPanel(true);
+            } else {
+              setOpen(false);
+              setOpenPanel(false);
+            }
           }}
           color="white"
-          size={40}
+          size={48}
           direction="right"
           duration={0.8}
           distance="lg"
         />
         ;
       </div>
-      <SlidingPanel type={'left'} isOpen={openPanel} size={30}>
-        <div>
-          <div>My Panel Content</div>
-        </div>
-      </SlidingPanel>
+      <SlidingPane from={'right'} isOpen={openPanel} width="200px" onRequestClose={() => setOpenPanel(false)}>
+        <div></div>
+      </SlidingPane>
     </div>
   );
 }
