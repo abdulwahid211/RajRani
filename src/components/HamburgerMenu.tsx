@@ -3,6 +3,7 @@ import Hamburger from 'hamburger-react';
 import SlidingPane from 'react-sliding-pane';
 import 'react-sliding-pane/dist/react-sliding-pane.css';
 import '../../styles/styles.scss';
+import { Link } from 'react-scroll';
 
 export default function HamburgerMenu() {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -10,6 +11,21 @@ export default function HamburgerMenu() {
 
   return (
     <div id="hamburger-menu">
+      <SlidingPane
+        from={'right'}
+        className="sliding-pane"
+        isOpen={openPanel}
+        width="400px"
+        closeIcon={false}
+        onRequestClose={() => {
+          setOpenPanel(false);
+          setOpen(false);
+        }}
+      >
+        <div style={{ color: 'black' }}>
+          <h1 style={{ color: 'black' }}>Menu</h1>
+        </div>
+      </SlidingPane>
       <div id="hamburger-icon">
         <Hamburger
           rounded
@@ -29,11 +45,7 @@ export default function HamburgerMenu() {
           duration={0.8}
           distance="lg"
         />
-        ;
       </div>
-      <SlidingPane from={'right'} isOpen={openPanel} width="200px" onRequestClose={() => setOpenPanel(false)}>
-        <div></div>
-      </SlidingPane>
     </div>
   );
 }

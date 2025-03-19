@@ -4,9 +4,18 @@
     position: fixed;
     right: 10px;
   }
+  .sliding-pane {
+    z-index: -1;
+  }
 }
 @media only screen and (min-width: 950px) {
   #hamburger-menu {
     display: none; /* Hide hamburger on larger screens */
   }
+}
+.hamburger-menu-list {
+  display: flex;
+  padding: -100px;
+  margin: 0%;
+  flex-direction: column;
 }
