@@ -12,7 +12,7 @@ export const Gallery = () => {
 
   const loadImages = () => {
     for (var i = 1; i <= 8; i++) {
-      var source = `../../img/foods/food${i}.png`;
+      var source = `../../rajrani/img/foods/food${i}.png`;
       photos.push({ src: source });
       setPhotos([...photos]);
     }
